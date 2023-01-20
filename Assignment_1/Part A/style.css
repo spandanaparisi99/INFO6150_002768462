@@ -1,5 +1,5 @@
 body {
-  margin:0
+  margin:0;
  }
 
 header {
@@ -48,12 +48,6 @@ table {
     background-color: #f2f2f2;
   }
   
-  form {
-    width: 50%;
-    padding: 16px;
-    margin: 0 auto; 
-  }
-  
   input[type=text], input[type=email], input[type=password] {
     width: 100%;
     padding: 12px 20px;
@@ -75,53 +69,13 @@ table {
   }
   
   button {
-    background-color: #4CAF50;
+    background-color: #6A2E35;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
     cursor: pointer;
   }
-  
-  /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-  background-color: #04AA6D;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Add a background color and some padding around the form */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.contact_header{
-  text-align: center;
-}
 
 .center_image {
   display: block;
@@ -142,4 +96,53 @@ h2{
 
 .button_class{
   text-align: center;
+}
+
+.contact_header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+label {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+input[type="text"], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #6A2E35;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
 }
