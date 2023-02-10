@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!--The header section-->
+    <div class="hero">
+        <nav>
+            <h2 class="logo">Portfo<span>lio</span></h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Me</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="#">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <!--content-->
+    <div class="content">
+        <div>
+            <h4>Hello, my name is</h4>
+            <h1>Spandana <span>Parisi</span></h1>
+            <h3>I'm a Software Engineer.</h3>
+    
+            <div class="newsletter">
+                <form action="">
+                    <input type="email" name="email" id="email" placeholder="Enter your email">
+                    <input type="submit" name="submit" value="Let's Start">
+                </form>
+            </div>    
+        </div>
+    </div>
+
+    <!--About Section-->
+    <section class="about">
+        <div class="main">
+            <img src="main-img.jpg" alt="main photo image">
+
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>Developer <span>& Designer</span></h5>
+                <p>My name is Raaga and I am an Information Systems graduate student at Northeastern
+                    University.
+                    I love working with data and extracting meaningful information from it. An example of
+                    which is a research project in my undergrad that focused on finding patterns in hit
+                    Billboard songs. I used tools such as web scrapping, data visualisation, and machine
+                    learning algorithms to categorize a song as a hit or a non-hit and I achieved an
+                    accuracy of 91%.
+                    I have expertise in Java, SQL, and Python. My strengths include Data Analysis and
+                    excellent research abilities.</p>
+                <a href="tel:+1234567890" class="button">Let's Talk</a>
+            </div>
+
+        </div> 
+    </section>
+
+    <!--Image gallery for certificates-->
+    <div class="cert-gallery">
+        <div>
+            <h2>Certifications</h2>
+        </div>
+
+        <div class="gallery">
+            <figure>
+                <img src="cert1.jpg" alt="Certification 1">
+                <figcaption>Certification 1</figcaption>
+              </figure>
+              <figure>
+                <img src="cert2.jpg" alt="Certification 2">
+                <figcaption>Certification 2</figcaption>
+              </figure>
+              <figure>
+                <img src="cert3.jpg" alt="Certification 3">
+                <figcaption>Certification 3</figcaption>
+              </figure>
+        </div>
+
+      </div>
+
+    <!--Services-->
+    <div class="service">
+        <div class="title">
+            <h2>My Projects</h2>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <i class="fa-regular fa-user"></i>
+                <h5>Food Delivery System</h5>
+                <div class="pra">
+                    <p>Created a multi-level Ecosystem Object model to accommodate all the routine Business functions involved in a food delivery system. The proposed model enhances the efficiency of the existing system by 30%</p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="column">
+                <i class="fa-solid fa-bars"></i>
+                <h5>University Event Management System</h5>
+                <div class="pra">
+                    <p>Implemented a data model and physical database architecture for Northeastern University Events Database Management System used to centralize data of events on campus.                    </p>
+
+                    <p style="text-align: center;">
+                        <a class="button" href="#">Read More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Contact Me-->
+    <div class="contact-me">
+        <p>I am open to new job opportunities in the software and data analysis fields and would be excited to bring my skills and experience to your organization. Please feel free to contact me for further information.</p>
+        <a href="mailto:parisi.r@northeastern.edu?subject=Inquiry&body=Hello, I have a question about your services" class="button-two">Contact Me</a>
+    </div>
+
+    <!--Footer-->
+    <footer>
+        <p>Spandana Parisi</p>
+        <p>Professionally curated content.</p>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p class="end">CopyRight by Spandana Parisi</p>
+    </footer>
+</body>
+</html>

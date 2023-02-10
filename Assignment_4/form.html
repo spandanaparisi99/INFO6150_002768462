@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+
+    label {	
+        float: left;
+		width: 150px;
+    }
+    
+    #container{
+        width: 700px;
+        margin: auto;
+        background-color: beige;
+    } 
+    
+    main{
+        padding: 50px;
+    }
+			
+    table {
+		width: 1300px;
+		margin: auto;
+		text-align: left;				
+	}
+
+	table, th, td { 
+		border: 1px solid;
+	}
+
+	.table-header {
+		text-align: center;
+		font-size: 24px;
+	}
+
+    input{
+        width: 190px;
+    }
+
+    #miss, #mr, #mrs, #source{
+        width: 30px;
+    }
+
+  </style>
+ </head>
+
+ <body>
+ <div id="container">
+	 
+	 <main>
+	 <h2>Feedback</h2>
+	 <h3>Love something? Hate something? Let us know!</h3>
+		 Note : Fields marked with an asterisk(*) are mandatory
+		 <br><br>
+		 <form novalidate>
+			
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="miss" required="required"/>Miss
+			<input type="radio" name="title" id="mr" value="mr" required="required"/>Mr.
+			<input type="radio" name="title" id="mrs" value="mrs" required="required"/>Mrs.
+			<br><br>
+			<label for="firstName">First Name*:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="First Name" />	
+			<br><br>
+			
+
+			<label for="lastName">Last Name*:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+			<br><br>
+			
+
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="emailId" id="emailId" placeholder="yourname@northeastern.edu" />
+			<br><br>
+			
+
+			<label for="phoneNumber">Phone Number*:</label>
+			<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" />
+			<br><br>
+
+			<label for="streetAddress1">Street Address 1*:</label>
+			<input type="text" name="streetAddress1" id="streetAddress1" placeholder="address" />
+			<br><br>
+
+			<label for="streetAddress2">Street Address 2:</label>
+			<input type="text" name="streetAddress2" id="streetAddress2" placeholder="address" />
+			<br><br>
+
+			<label for="city">City*:</label>
+			<input type="text" name="city" id="city" placeholder="city" />
+			<br><br>
+
+			<label for="state">State*:</label>
+			<input type="text" name="state" id="state" placeholder="state" />
+			<br><br>
+			
+            <label for="zipcode">ZipCode*:</label>
+			<input type="text" name="zipcode" id="zipcode" placeholder="xxxxx" />
+			<br><br>
+
+            <label for="suggestion">Suggestions*:</label>
+			<select name="suggestion" id="suggestion">
+				<option value="select">Select suggestion</option>
+				<option value="appetizer">Appetizer</option>
+				<option value="mainCourse">Main Course</option>
+				<option value="Soup">soup</option>
+				<option value="Dessert">dessert</option>
+				<option value="drinks">drinks</option>
+			</select>
+			<br><br>
+
+			<div id="dynamicCheckbox" class="dynamicCheckbox" style="display: none">
+				<br><br>
+			</div>
+
+			<div id="textReason" class="textReason" style="display: none">
+				<br>
+				<label for="suggestionComment">More Feedback*: </label>
+				<textarea name="suggestionComment" id="suggestionComment" cols="30" rows="10"></textarea>
+				<br><br>
+			</div>			
+             
+			<label for="zipcode">How did you hear*:</label>
+			<input id="source" type='checkbox' name="source" value="facebook" /> Facebook
+			<input id="source" type='checkbox' name="source" value="google" /> Google
+			<input id="source" type='checkbox' name="source" value="yelp" /> Yelp 
+			<br><br> 
+             
+			<label for="comments">Comments*:</label>
+			<textarea name="text" id="comments" placeholder="Your comments" rows="5" cols="25"></textarea>
+			<br><br>
+
+			<input type="Submit">
+			<input type="Reset">
+			<br><br>
+		 </form>
+	 </main>	 
+ </div>
+
+ <br><br><br><br>
+ 
+ <div class="table-container">
+	<h2 class="table-header">Feedback Data:</h2><br><br>
+	<table id="tableData">
+		<tr>
+			<th>Name</th>
+			<th>Email ID</th>
+			<th>Phone Number</th>
+			<th>Street Address 1</th>
+			<th>Street Address 2</th>
+			<th>City</th>
+			<th>State</th>
+			<th>Zip Code</th>
+			<th>Source</th>
+			<th>Comments</th>
+			<th>Selected Suggestion</th>
+			<th>Suggestion Comments</th>
+		</tr>
+	</table>
+	<br><br><br>
+ </div>
+
+ <script src="script.js"></script>
+
+ </body>
+</html>
