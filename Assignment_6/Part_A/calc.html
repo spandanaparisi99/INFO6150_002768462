@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h2 id="welcomeMsg">Welcome <span id="username"></span></h2>
+    <form>
+      <label for="num1">Enter Number 1:</label>
+      <input type="text" id="num1" name="num1" />
+      <div id="error1"></div>
+      <br /><br />
+
+      <label for="num2">Enter Number 2:</label>
+      <input type="text" id="num2" name="num2" />
+      <div id="error2"></div>
+      <br /><br />
+
+      <div id="results">
+        <label for="result">Result:</label>
+        <input type="text" id="result" name="result" readonly /><br /><br />
+      </div>
+
+      <div>
+        <input type="button" id="add" value="Add" onclick="Operations('add')" />
+        <input
+          type="button"
+          id="subtract"
+          value="Subtract"
+          onclick="Operations('sub')"
+        />
+        <input
+          type="button"
+          id="multiply"
+          value="Multiply"
+          onclick="Operations('mul')"
+        />
+        <input
+          type="button"
+          id="divide"
+          value="Divide"
+          onclick="Operations('div')"
+        />
+
+        <input type="reset" id="reset" value="Reset" />
+      </div>
+    </form>
+    <br /><br />
+  </body>
+</html>

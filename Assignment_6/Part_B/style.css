@@ -1,0 +1,51 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.time {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:not(:last-child) {
+  margin-right: 10px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.start {
+  background-color: green;
+  color: white;
+}
+
+.stop {
+  background-color: red;
+  color: white;
+}
+
+.reset {
+  background-color: gray;
+  color: white;
+}
