@@ -1,0 +1,8 @@
+- Variables, Custom Properties, Nesting, Interpolation, Placeholder Selectors, Mixins, Functions
+- Used variables to define common colors.
+- Used custom properties for aligning the container elements.
+- Used nesting wherever required for e.g. the hover effect for button and images.
+- Used interpolation for colors.
+- Used placeholder selectors to align to the center.
+- Used mixins for defining colors and alignment.
+- Used function to increase brightness of colors at various places.
